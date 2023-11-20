@@ -22,7 +22,7 @@ checksum-file = "orogene-{arch}-pc-windows-msvc.tar.gz.sha256"
 download-file = "orogene-{arch}-pc-windows-msvc.tar.gz"
 
 [install]
-checksum-url = "https://github.com/orogene/orogene/releases/download/v{version}/{checksum_file}"
+# checksum-url = "https://github.com/orogene/orogene/releases/download/v{version}/{checksum_file}"
 download-url = "https://github.com/orogene/orogene/releases/download/v{version}/{download_file}"
 
 [resolve]
