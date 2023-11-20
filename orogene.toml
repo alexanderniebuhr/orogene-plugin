@@ -1,0 +1,29 @@
+name = "Orogene"
+type = "package-manager"
+
+[platform.linux]
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-unknown-linux-gnu.tar.gz.sha256
+checksum-file = "orogene-{arch}-unknown-linux-{libc}.tar.gz.sha256"
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-unknown-linux-gnu.tar.gz
+download-file = "orogene-{arch}-unknown-linux-{libc}.tar.gz"
+
+[platform.macos]
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-apple-darwin.tar.gz.sha256
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-aarch64-apple-darwin.tar.gz.sha256
+checksum-file = "orogene-{arch}-apple-darwin.tar.gz.sha256"
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-apple-darwin.tar.gz
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-aarch64-apple-darwin.tar.gz
+download-file = "orogene-{arch}-apple-darwin.tar.gz"
+
+[platform.windows]
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-pc-windows-msvc.tar.gz.sha256
+checksum-file = "orogene-{arch}-pc-windows-msvc.tar.gz.sha256"
+# https://github.com/orogene/orogene/releases/download/v0.3.34/orogene-x86_64-pc-windows-msvc.tar.gz
+download-file = "orogene-{arch}-pc-windows-msvc.tar.gz"
+
+[install]
+checksum-url = "https://github.com/orogene/orogene/releases/download/v{version}/{checksum_file}"
+download-url = "https://github.com/orogene/orogene/releases/download/v{version}/{download_file}"
+
+[resolve]
+git-url = "https://github.com/orogene/orogene"
